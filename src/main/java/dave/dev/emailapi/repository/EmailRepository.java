@@ -6,5 +6,5 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 
-public class EmailRepository extends JpaRepository<Email, Long> {
+public interface EmailRepository extends JpaRepository<Email, Long> {
 }
