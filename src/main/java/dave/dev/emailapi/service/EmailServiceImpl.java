@@ -1,5 +1,6 @@
 package dave.dev.emailapi.service;
 
+import dave.dev.emailapi.exception.EmailNotFoundException;
 import dave.dev.emailapi.model.Email;
 import dave.dev.emailapi.repository.EmailRepository;
 import org.springframework.beans.factory.annotation.Autowired;
