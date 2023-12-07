@@ -15,7 +15,7 @@ public class EmailController {
     private EmailService emailService;
 
     @PostMapping
-    public ResponseEntity<Email> sendEmail(@RequestBody Email email,) {
+    public ResponseEntity<Email> sendEmail(@RequestBody Email email) {
         Email sentEmail = emailService.sendEmail(email);
         return new ResponseEntity<>(sentEmail, HttpStatus.CREATED);
     }
